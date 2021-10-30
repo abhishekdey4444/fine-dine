@@ -1,0 +1,57 @@
+#social{
+    width: 100%;
+    height: 150px;
+    background-color: #F0A500;
+    display: inline-block;
+}
+.socials{
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.social1,.social2,.social3,.social4{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.fa,.tw,.insta,.ln{
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+}
+.office-details{
+    float: right;
+    margin-top: 50px;
+    margin-right: 150px;
+    display: flex;
+}
+.office-location-img{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+.office-add{
+    font-size: 1rem;
+    max-width: 170px;
+    line-height: 20px;
+    font-family: Helvetica, sans-serif;
+    color: white;
+}
+.email-details{
+    float: right;
+    margin-right: 180px;
+    margin-top: 60px;
+    display: flex;
+}
+.office-email-img{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+.office-email{
+    font-size: 1rem;
+    max-width: 170px;
+    line-height: 20px;
+    font-family: Helvetica, sans-serif;
+    color: white;
+}

@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sign-up{
+    width: 100%;
+    height: 100vh;
+}
+.signuphead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: #F0A500;
+    font-family: Helvetica, sans-serif;
+    padding: 50px;
+}
+.signup-form{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.signup-page{
+    width: 60%;
+    background-color: royalblue;
+
+}
+.signupform-img{
+    display: flex;
+    justify-content: center;
+}
+.signup-img{
+    width: 80px;
+    height: auto;
+}
+.signupdetails-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+.fname,.s-email,.s-password,.s-c-password{
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    padding: 20px 30px;
+    font-family: Helvetica, sans-serif;
+    float: left;
+    font-weight: 600;
+}
+.fname input[type=text]{
+    padding: 10px 40px 10px 5px;
+    outline: none;
+    float: right;
+}
+.fnamebox{
+    position: relative;
+    left: 100px;
+    width: 400px;
+}
+.s-email input[type=email]{
+    padding: 10px 40px 10px 5px;
+    outline: none;
+}
+.s-emailbox{
+    position: relative;
+    left: 130px;
+    width: 400px;
+}
+.s-password input[type=password]{
+    padding: 10px 40px 10px 5px;
+    outline: none;
+}
+.s-passwordbox{
+    position: relative;
+    left: 100px;
+    width: 400px;
+}
+.s-c-password input[type=password]{
+    padding: 10px 40px 10px 5px;
+    outline: none;
+}
+.s-c-passwordbox{
+    position: relative;
+    left: 58px;
+    width: 400px;
+}
+.signupform-btn{
+    padding: 8px 40px;
+    cursor: pointer;
+    background-color: black;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    margin-bottom: 10px;
+    
+}
+.signup-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

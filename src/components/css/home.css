@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.home{
+    background-color: #F0A500;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.home h1{
+    font-size: 7rem;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    color: white;
+    
+}
+.h1s{
+    width: 0;
+    height: 0;
+}
+.h1s .books{
+    position: absolute;
+    top: 100px;
+    left: 70px;
+    
+}
+.h1s .dine{
+    position: absolute;
+    top: 230px;
+    left: 70px;
+    
+}
+.h1s .repeat{
+    position: absolute;
+    top: 360px;
+    left: 70px;
+}
+.popcorn{
+    width: 250px;
+    height: auto;
+    position: absolute;
+    right: 240px;
+    top: 100px;
+    transform: rotate(15deg);
+}
+.qoute1,.qoute2{
+    width: 60px;
+    height: auto;
+    position: absolute;
+    
+}
+.qoute1{
+    left: 10px;
+    top: 70px;
+    transform: rotate(180deg);
+}
+.qoute2{
+    top: 460px;
+    left: 510px;
+    transform: rotate(180deg) scaleX(-1) ;
+}
+
+@media only screen and (max-width: 1024px) {
+    .popcorn{
+        right: 120px;
+        top: 150px;
+        width: 200px;
+    }
+    .qoute1,.qoute2{
+        width: 50px;
+    }
+    .home h1{
+        font-size: 5rem;
+        
+    }
+    .qoute2{
+        left: 430px;
+    }
+    
+}
+@media only screen and (max-width: 789px) {
+    .popcorn{
+        right: 90px;
+        display: none;
+    }
+    .qoute2{
+        left: 400px;
+    }
+}
+@media only screen and (max-width: 540px) {
+    .popcorn{
+        display: none;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .home h1{
+        font-size: 3rem;
+    }
+    .h1s{
+        position: absolute;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .qoute1,.qoute2{
+        display: none;
+    }
+   
+}

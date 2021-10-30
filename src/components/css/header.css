@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	background-color: #F90;	
+	background-image: -webkit-linear-gradient(45deg,
+	                                          rgba(255, 255, 255, .2) 25%,
+											  transparent 25%,
+											  transparent 50%,
+											  rgba(255, 255, 255, .2) 50%,
+											  rgba(255, 255, 255, .2) 75%,
+											  transparent 75%,
+											  transparent)
+}
+
+/*---------------------->header styles<----------------------------*/
+.header{
+    width:100%;
+    height: 60px;
+    background-color: #F0A500;
+    position: relative;
+    z-index: 5;
+    
+}
+.header-head{
+    font-size: 2.65rem;
+    color: #FEFBF3;
+    font-family: pacifico;
+    position: absolute;
+    left: 70px;
+    top: 10px;
+    margin-left: 20px;
+    transition: 0.5s ease;
+    z-index: 5;
+}
+.icon{
+    position: absolute;
+    top:5px;
+    left: 15px;
+    width:50px;
+    height: 50px;
+    display: none;
+}
+ul{
+    text-decoration: none;
+    float: right;
+    margin-left: 0;
+    list-style-type: none; 
+    position: absolute;
+    top: 15px;
+    right:20px;
+
+}
+ul li{
+    display: inline-block;
+    padding-left: 20px;
+    font-family: Helvetica, sans-serif
+    
+}
+ul li a{
+    text-decoration: none;
+    color: #FEFBF3;
+    transition: 0.6s ease;
+} 
+ul li a:hover{
+    background-color:#fff ;
+    color: #F0A500;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
+.hamburger{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #FEFBF3;
+    top: 15px;
+    right: 20px;
+    border-radius: 5px;
+    display: none;
+}
+.line1{
+    height: 2px;
+    width: 20px;
+    background-color: black;
+    position: absolute;
+    top: 7px;
+    right: 5px;
+}
+.line2{
+    height: 2px;
+    width: 20px;
+    background-color: black;
+    position: absolute;
+    top: 14px;
+    right: 5px;
+}
+.line3{
+    height: 2px;
+    width: 20px;
+    background-color: black;
+    position: absolute;
+    top: 21px;
+    right: 5px;
+}
+.angle1{
+    transform: rotate(45deg);
+    top: 15px ;
+}
+.angle2{
+    transform: rotate(-45deg);
+    top: 15px ;
+}
+.hideAll{
+    display: none;
+}
+.signupButton,.loginButton{
+    padding: 12px 20px;
+    border: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    
+}
+.loginButton{
+    background-color: #fff;
+    color: black;
+}
+.loginButton:hover{
+    background-color: #ededed;
+    cursor: pointer;
+}
+.signupButton{
+    background-color: black;
+    color: #fff;
+   border: 0;
+    cursor: pointer;
+}
+.signupButton:hover{
+}
+/*--------------------->end header styles<----------------------*/
+
+/*------------------>modal style<---------------------------*/
+
+.loginmodal{
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.modal{
+    
+    height: 330px;
+    width: 50%;
+    position: absolute;
+    top: 150px;
+    padding: 10px;
+    background-color: #F0A500;
+    animation: popout 0.5s ease-in;
+    z-index: 10;
+    text-align: center;
+}
+.modalHead{
+    font-family: pacifico;
+    text-align: center;
+    padding: 5px;
+    color: white;
+}
+.login-modal-icon{
+    width: 50px;
+    height: auto;
+    z-index: 5;
+}
+.crossIcon{
+    width: 20px;
+    height: auto;
+    float: right;
+}
+.crossIcon:hover{
+    cursor: pointer;
+}
+.lBox,.pBox{
+    display: inline-block;
+    padding: 12px 20px;
+    border: 1px solid white;
+}
+.lBox:focus{
+    outline: none;
+}
+.pBox:focus{
+    outline: none;
+}
+.pBox{
+    margin-top: 10px;
+}
+.loginmodalbutton{
+    padding: 12px 15px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: black;
+    color: #fff;
+   border: 0;
+    cursor: pointer;
+}
+.forgotpass{
+    color: white;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+
+/*--------------------------->end modal styles<---------------------*/
+
+/*------------------>animations (popout)<---------------------------*/
+
+@keyframes popout {
+    from{transform:scale(0)}
+    80%{transform:scale(1.2)}
+    to{transform:scale(1)}
+}
+@-webkit-keyframes popout {
+    from{-webkit-transform:scale(0)}
+    80%{-webkit-transform:scale(1.2)}
+    to{-webkit-transform:scale(1)}
+}
+
+  @media only screen and (max-width: 600px) {
+     ul{
+         display: none;
+     }
+     .hamburger{
+         display: unset;
+     }
+     h1{
+         font-size: 1.5rem;
+         padding-top: 8px;
+         transition: 0.5s ease;
+     }
+
+  }
+  @media only screen and (max-width: 450px){
+      .header h1{
+          display: none;
+      }
+      .icon{
+          display: unset;
+          transition: 0.6s ease;
+      }
+  }

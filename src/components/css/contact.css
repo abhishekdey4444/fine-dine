@@ -1,0 +1,48 @@
+#contact{
+    width: 100%;
+    height: 550px;
+}
+.contact{
+    display: inline-block;
+}
+.contact-head{
+    font-size: 6rem;
+    color: #F0A500;
+    margin-top: 50px;
+    margin-left: 80px; 
+    max-width: 650px;
+    display: inline-block;
+}
+.contact h3{
+    margin-left: 80px;
+    margin-top: 50px; 
+    color: #c4c4c4;
+    font-family: Helvetica, sans-serif;
+    font-weight: 355;
+    max-width: 450px;
+    display: inline-block;
+
+}
+.googlep,.apples{
+    padding-top: 20px;
+    margin-top: 50px;;
+}
+.googlep{
+    width: 220px;
+    height: 80px;
+    margin-left: 80px;
+}
+.apples{
+    width: 220px;
+    height: 82px;
+    margin-left:20px;
+
+}
+.mob-app{
+ margin-right: 180px;
+ margin-top: 90px;
+ transform: scale(1.4);
+}
+.mob-img{
+    float: right;
+}
